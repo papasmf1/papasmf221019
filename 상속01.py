@@ -7,7 +7,9 @@ class Person:
     def printInfo(self):
         print("Info(Name:{0}, Phone Number: {1})".format(
             self.name, self.phoneNumber))
-
+    def working(self):
+        print("작업중")
+        
 #자식 클래스 
 class Student(Person):
     #상속 받은 초기화 메서드를 덮어쓰기(override)

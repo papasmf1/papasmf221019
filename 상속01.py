@@ -9,7 +9,9 @@ class Person:
             self.name, self.phoneNumber))
     def working(self):
         print("작업중")
-        
+    def coding(self):
+        print("코딩중")
+
 #자식 클래스 
 class Student(Person):
     #상속 받은 초기화 메서드를 덮어쓰기(override)
@@ -29,9 +31,8 @@ class Student(Person):
 p = Person("전우치", "010-222-1234")
 s = Student("이순신", "010-111-1234", "빅데이터", "201122")
 #object클래스에 구현된 요소들 
-# print(p.__dict__)
-# print(s.__dict__)
 p.printInfo()
 s.printInfo()
-
+s.working()
+s.coding()
 

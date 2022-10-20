@@ -7,13 +7,10 @@ page = open("c:\\work2\\test01.html", "rt", encoding="utf-8").read()
 #검색이 용이한 객체 생성
 soup = BeautifulSoup(page, "html.parser")
 #print( soup.prettify() )
-
 #모든 <p>검색 ==> List
 #print( soup.find_all("p") )
-
 #첫번째 <p>검색 
 #print( soup.find("p") )
-
 #<p class='outer-text'>컨텐츠</p>
 #파이썬의 class키워드와 충돌 
 #print( soup.find_all("p", class_="outer-text") )

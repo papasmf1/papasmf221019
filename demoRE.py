@@ -16,3 +16,7 @@ print("---search함수 사용---")
 print( bool(re.search("apple", "this is apple")) )
 print( bool(re.match("apple", "this is apple")) )
 
+result = re.search("\d{4}", "올해는 2022년입니다.")
+print( result.group() )
+result = re.search("\d{5}", "우리 동네는 52100입니다.")
+print( result.group() )

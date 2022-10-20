@@ -4,6 +4,8 @@ import urllib.request
 #웹크롤링
 from bs4 import BeautifulSoup
 
+#파일로 저징
+f = open("c:\\work2\\webtoon.txt", "wt", encoding="utf-8")
 #페이징 처리
 for i in range(1,6):
     url = "https://comic.naver.com/webtoon/list?titleId=20853&weekday=fri&page=" + str(i)
@@ -19,3 +21,6 @@ for i in range(1,6):
     for item in cartoons:
         title = item.find("a").text 
         print(title)
+        f.write(title + "\n")
+
+f.close() 

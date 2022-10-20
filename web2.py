@@ -19,5 +19,5 @@ print( link )
 # </td>
 
 for item in cartoons:
-    title = item.fine("a").text 
+    title = item.find("a").text 
     print(title)

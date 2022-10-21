@@ -16,5 +16,5 @@ worksheet.write(1,2,u"읽기")
 worksheet.write(1,3,u"쓰기")
 worksheet.write(1,4,u"저장하기")
 
-workbook.save("c:\\work\\example2.xls")
+workbook.save("c:\\work2\\example2.xls")
                        

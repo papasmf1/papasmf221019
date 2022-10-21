@@ -4,7 +4,7 @@
 # pip install xlwt
 import xlrd
 
-workbook = xlrd.open_workbook('c:\\work\\example.xls')
+workbook = xlrd.open_workbook('c:\\work2\\example.xls')
 worksheet = workbook.sheet_by_index(0)
 nrows = worksheet.nrows
 

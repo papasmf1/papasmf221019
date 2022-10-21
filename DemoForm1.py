@@ -5,7 +5,7 @@ from PyQt5.QtWidgets import *
 from PyQt5 import uic 
 
 #화면을 로딩
-form_class = uic.loadUiType("DemoForm1.ui")[0]
+form_class = uic.loadUiType("DemoForm.ui")[0]
 
 #폼 클래스 정의
 class DemoForm(QDialog, form_class):

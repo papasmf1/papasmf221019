@@ -3,7 +3,8 @@
 import urllib.request
 #웹크롤링
 from bs4 import BeautifulSoup
-#파일로 저징
+
+#파일로 저장
 f = open("c:\\work2\\webtoon.txt", "wt", encoding="utf-8")
 #페이징 처리
 for i in range(1,6):
